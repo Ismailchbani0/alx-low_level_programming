@@ -10,15 +10,15 @@
  */
 int main(void)
 {
-    int number = 0;
+	int number = 0;
 
-    while (number <= 9)
-    {
-        putchar(number + '0');  /* Convert the number to its character representation and print it */
-        number++;
-    }
+	while (number <= 9)
+	{
+		putchar(number + '0');  /* Convert the number to its character representation and print it */
+		number++;
+	}
 
-    putchar('\n');  /* Print a new line */
+	putchar('\n');  /* Print a new line */
 
-    return (0);
+	return (0);
 }
