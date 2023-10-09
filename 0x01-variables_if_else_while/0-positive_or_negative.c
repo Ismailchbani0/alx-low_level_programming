@@ -5,8 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: Generates a random number and prints whether it's positive,
- *              negative, or zero.
+ * This program assigns a random number to the variable n and
+ * prints whether it is positive, negative, or zero.
  *
  * Return: Always 0 (Success)
  */
@@ -14,24 +14,22 @@ int main(void)
 {
     int n;
 
-    srand(time(0));
-    n = rand() % 201 - 100; /* Generates a random number between -100 and 100 */
+    srand(time(0));  /* Seed for random number generation */
 
-    printf("%d is ", n);
+    n = rand() - RAND_MAX / 2;  /* Assign a random number to n */
 
     if (n > 0)
-        printf("positive\n");
+    {
+        printf("%d is positive\n", n);
+    }
     else if (n < 0)
-        printf("negative\n");
+    {
+        printf("%d is negative\n", n);
+    }
     else
-        printf("zero\n");
+    {
+        printf("%d is zero\n", n);
+    }
 
     return (0);
 }
-I have corrected the issue in the code, and now it should produce the expected output for positive, negative, and zero values of n.
-
-
-
-
-
-
