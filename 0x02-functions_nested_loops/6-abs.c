@@ -7,9 +7,9 @@
  * Return: the absolute value of n
  */
 int _abs(int n)
-	{
-	if (n < 0)
-		return (-n);  // Added space before the open parenthesis
-	else
-		return (n);   // Added space before the open parenthesis
-	}
+{
+    if (n < 0)
+        return -n;
+    else
+        return n;
+}
