@@ -5,14 +5,14 @@
  */
 void print_alphabet(void)
 {
-    char letter = 'a';
+	char letter = 'a';
 
-    while (letter <= 'z')
-    {
-        _putchar(letter);
-        letter++;
-    }
+	while (letter <= 'z')
+	{
+		_putchar(letter);
+		letter++;
+	}
 
-    /* Place this statement inside the code block */
-    _putchar('\n');
+	/* Place this statement inside the code block */
+	_putchar('\n');
 }
