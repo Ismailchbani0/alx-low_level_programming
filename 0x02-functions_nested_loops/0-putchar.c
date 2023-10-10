@@ -1,15 +1,12 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - Entry point for the program
+ * _putchar - Writes a character to the standard output (stdout)
+ * @c: The character to be written
  *
- * Description: This function prints the string "_putchar"
- * to the standard output (stdout).
- *
- * Return: Always 0 (Success)
+ * Return: 1 on success, -1 on error
  */
-int main(void)
+int _putchar(char c)
 {
-    printf("_putchar\n");
-    return (0);
+    return write(1, &c, 1);
 }
