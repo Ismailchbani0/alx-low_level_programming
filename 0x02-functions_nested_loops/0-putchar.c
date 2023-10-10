@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>  // Include the <unistd.h> header for the write function
 
 /* Declaration of the _putchar function */
 int _putchar(char c);
