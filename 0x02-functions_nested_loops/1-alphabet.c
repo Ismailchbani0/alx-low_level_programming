@@ -13,5 +13,5 @@ void print_alphabet(void)
         letter++;
     }
 
-    _putchar('\n');
-
+    _putchar('\n');  // Place this statement inside the code block
+}
