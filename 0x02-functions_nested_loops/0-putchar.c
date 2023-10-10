@@ -1,11 +1,5 @@
-/**
- * main - Entry point for the program
- *
- * This function prints the string "_putchar" followed by a new line
- * to the standard output (stdout).
- *
- * Return: Always 0 (Success)
- */
+#include <stdio.h>
+
 int main(void)
 {
     printf("_putchar\n");
