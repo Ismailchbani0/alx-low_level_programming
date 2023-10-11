@@ -9,17 +9,17 @@
  */
 int print_last_digit(int n)
 {
-    int last_digit;
+	int last_digit;
 
-    if (n == INT_MIN)
-    {
-        last_digit = 8; /* Handle the special case of INT_MIN */
-    }
-    else
-    {
-        last_digit = (n < 0) ? -n % 10 : n % 10;
-    }
+	if (n == INT_MIN)
+	{
+		last_digit = 8; /* Handle the special case of INT_MIN */
+	}
+	else
+	{
+		last_digit = (n < 0) ? -n % 10 : n % 10;
+	}
 
-    _putchar('0' + last_digit);
-    return last_digit;
+	_putchar('0' + last_digit);
+	return (last_digit);
 }
