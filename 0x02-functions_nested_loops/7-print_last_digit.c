@@ -13,7 +13,7 @@ int print_last_digit(int n)
 
     if (n == INT_MIN)
     {
-        last_digit = 8; // Handle the special case of INT_MIN
+        last_digit = 8; /* Handle the special case of INT_MIN */
     }
     else
     {
