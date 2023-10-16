@@ -1,18 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
-/**
- * puts2 - Prints every other character of a string.
- * @str: A pointer to a string.
- */
 void puts2(char *str)
 {
-	int i = 0;
+	if (str == NULL)
+		return;
 
+	int i = 0;
 	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
-		i += 2;  /* Move to every other character */
+		if (i % 2 == 0)  // Check if the index is even
+		{
+		putchar(str[i]);
+		}
+		i++;
 	}
-
-	_putchar('\n');
+	putchar('\n');
 }
