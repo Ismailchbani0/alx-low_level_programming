@@ -3,19 +3,19 @@
 
 void puts2(char *str)
 {
-    int i; /* Declare variables at the beginning of the function */
+	int i; /* Declare variables at the beginning of the function */
 
-    if (str == NULL)
-        return;
+	if (str == NULL)
+		return;
 
-    i = 0; /* Initialize the variable here */
-    while (str[i] != '\0')
-    {
-        if (i % 2 == 0)
-        {
-            putchar(str[i]);
-        }
-        i++;
-    }
-    putchar('\n');
+	i = 0; /* Initialize the variable here */
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+		{
+			putchar(str[i]);
+		}
+		i++;
+	}
+	putchar('\n');
 }
