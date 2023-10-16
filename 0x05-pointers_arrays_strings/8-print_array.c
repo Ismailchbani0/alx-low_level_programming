@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_array - Prints n elements of an array of integers, followed by a new line.
@@ -8,18 +7,21 @@
  */
 void print_array(int *a, int n)
 {
+	int i; // Declare the loop counter variable
+
 	if (a == NULL || n <= 0)
 		return;
 
-	for (int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[i]);
+		_putchar('0' + a[i]); // Convert and print the integer as a character
 
 		if (i < n - 1)
 		{
-			printf(", ");
+			_putchar(','); // Print a comma
+			_putchar(' '); // Print a space
 		}
 	}
 
-	printf("\n");
+	_putchar('\n'); // Print a newline
 }
