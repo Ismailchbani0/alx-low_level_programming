@@ -3,13 +3,15 @@
 
 void puts2(char *str)
 {
-	if (str == NULL)
-		return;
+	int i; // Declare variables at the beginning of the function
 
-	int i = 0; // Declare variables at the beginning of the function
+	if (str == NULL)
+	return;
+
+	i = 0; // Initialize the variable here
 	while (str[i] != '\0')
 	{
-		if (i % 2 == 0)  /* Check if the index is even */
+		if (i % 2 == 0)
 		{
 			putchar(str[i]);
 		}
