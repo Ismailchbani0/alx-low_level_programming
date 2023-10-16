@@ -7,21 +7,21 @@
  */
 void print_array(int *a, int n)
 {
-	int i; // Declare the loop counter variable
-
+	int i;
+    
 	if (a == NULL || n <= 0)
 		return;
-
+    
 	for (i = 0; i < n; i++)
 	{
-		_putchar('0' + a[i]); // Convert and print the integer as a character
-
+		_putchar('0' + a[i); /* Convert and print the integer as a character */
+        
 		if (i < n - 1)
 		{
-			_putchar(','); // Print a comma
-			_putchar(' '); // Print a space
+			_putchar(',');
+			_putchar(' ');
 		}
 	}
-
-	_putchar('\n'); // Print a newline
+    
+	_putchar('\n');
 }
