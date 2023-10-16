@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_array - Prints n elements of an array of integers.
+ * print_array - Prints n elements of an array of integers, followed by a new line.
  * @a: The array of integers.
  * @n: The number of elements to be printed.
  */
@@ -12,19 +12,19 @@ void print_array(int *a, int n)
 
 	if (a == NULL || n <= 0)
 	{
-		printf("\n"); // Print a newline if the array is NULL or n is non-positive
+		printf("\n");
 		return;
 	}
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[i]); /* Print the integer */
-
+		printf("%d", a[i]);
+        
 		if (i < n - 1)
 		{
-			printf(", "); /* Print a comma and space for elements other than the last one */
+			printf(", ");
 		}
 	}
 
-	printf("\n"); /* Print a newline */
+	printf("\n");
 }
