@@ -6,12 +6,12 @@ void puts2(char *str)
 	if (str == NULL)
 		return;
 
-	int i = 0;
+	int i = 0; // Declare variables at the beginning of the function
 	while (str[i] != '\0')
 	{
-		if (i % 2 == 0)  // Check if the index is even
+		if (i % 2 == 0)  /* Check if the index is even */
 		{
-		putchar(str[i]);
+			putchar(str[i]);
 		}
 		i++;
 	}
