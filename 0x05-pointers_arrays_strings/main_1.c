@@ -1,7 +1,11 @@
 #include "main.h"
 #include <stdio.h>
-#include <ctype.h> // Include the ctype library for isprint function
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
     char str[] = "Lorem ipsum..."; // Your input string
@@ -15,7 +19,7 @@ int main(void)
     // Copy only printable characters from the input to the sanitized string
     int sanitized_len = 0;
     for (int i = 0; str[i] != '\0'; i++) {
-        if (isprint(str[i])) {
+        if (str[i] >= 32 && str[i] <= 126) {
             sanitized_str[sanitized_len] = str[i];
             sanitized_len++;
         }
