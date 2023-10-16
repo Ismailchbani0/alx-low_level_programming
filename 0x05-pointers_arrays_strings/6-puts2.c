@@ -10,12 +10,12 @@
  */
 void puts2(char *str)
 {
-	int i; /* Declare variables at the beginning of the function */
+	int i;
 
 	if (str == NULL)
 		return;
 
-	i = 0; /* Initialize the variable here */
+	i = 0;
 	while (str[i] != '\0')
 	{
 		if (i % 2 == 0)
