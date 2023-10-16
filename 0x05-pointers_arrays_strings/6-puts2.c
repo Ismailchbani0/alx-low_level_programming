@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * puts2 - Print every other character of a string, starting with the first character.
+ * puts2 - Print every other character of a string.
  * @str: The input string.
  *
- * Description: This function iterates through the input string and prints every
- * other character, starting with the first character. The output is followed by a newline.
+ * Description: This function iterates through
+ * other character, starting with the first character.
  */
 void puts2(char *str)
 {
