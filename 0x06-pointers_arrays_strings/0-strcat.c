@@ -5,28 +5,22 @@
  * @dest: The destination string to which src will be appended
  * @src: The source string to append to dest
  * 
- * Return: A pointer to the resulting string (dest)
+ * Return: pointer to resulting string @dest
  */
-char *_strcat(char *dest, char *src)
+
+char *_strcat(char *dest, char *src);
 {
-    int dest_len = 0;
-    int i;
+	int c, c2;
 
-    // Calculate the length of dest
-    while (dest[dest_len] != '\0')
-    {
-        dest_len++;
-    }
+	c = 0;
+	/*find the size of dest array*/
+	while  (dest[c])
+		c++;
 
-    // Append the characters from src to dest
-    for (i = 0; src[i] != '\0'; i++)
-    {
-        dest[dest_len + i] = src[i];
-    }
+	/* iterate through each src array value without the null byte*/
+	for (c2 = 0; src[c2] ; c2++)
+		/* append src [c2 to dest[c] while overwritting the null byte in dest*/
+		dest[c++] = src[c2];
 
-    // Null-terminate the resulting string
-    dest[dest_len + i] = '\0';
-
-    return dest;
+	return (dest);
 }
-
