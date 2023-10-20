@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_triangle - Print a right-angled triangle of '#' characters.
+ * print_triangle - Prints a triangle made of '#' characters
  * @size: The size of the triangle.
  */
 void print_triangle(int size)
@@ -16,7 +16,7 @@ void print_triangle(int size)
 
 		for (i = 1; i <= size; i++)
 		{
-			for (j = size - i; j > 0; j--)
+			for (j = 1; j <= size - i; j++)
 			{
 				_putchar(' ');
 			}
