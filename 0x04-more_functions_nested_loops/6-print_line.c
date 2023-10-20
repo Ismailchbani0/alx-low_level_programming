@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_line - Print a straight line of underscores.
- * @n: The number of times to print the character '_'.
+ * print_line - Prints a line of '_' characters, followed by a newline.
+ * @n: The number of times the character '_' should be printed.
  */
 void print_line(int n)
 {
@@ -18,7 +18,7 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
+
 		_putchar('\n');
 	}
 }
-
