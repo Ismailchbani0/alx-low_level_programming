@@ -9,22 +9,22 @@
 int main(void)
 {
 	int i;
-	unsigned long long a = 1;
-	unsigned long long b = 2;
-	unsigned long long sum;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long sum;
 
-	printf("%llu, %llu, ", a, b);
+	printf("%lu, %lu, ", a, b);
 
 	for (i = 3; i <= 98; i++)
 	{
 		sum = a + b;
-		printf("%llu", sum);
+		printf("%lu", sum);
 
 		if (i < 98)
 		{
 			printf(", ");
 		}
-
+        
 		a = b;
 		b = sum;
 	}
