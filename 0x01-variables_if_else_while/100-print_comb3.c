@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ * Description: This program prints all possible different combinations
+ * Numbers must be separated by ", " and in ascending order.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int first_digit, second_digit;
