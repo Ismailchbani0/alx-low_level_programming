@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point for the program.
+ * Description: This program calculates the sum of even-valued terms
+ * sequence whose values do not exceed 4,000,000 and prints the result.
+ * Return: Always 0 to indicate successful execution.
+ */
 int main(void)
 {
 	long int sum = 0;
