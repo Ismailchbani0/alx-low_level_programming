@@ -8,25 +8,21 @@
  */
 int main(void)
 {
-	unsigned int a, b, sum;
+	unsigned long a = 1, b = 2;
 	int count;
 
-	a = 1;
-	b = 2;
-	sum = 0;
+	printf("%lu, %lu, ", a, b);
 
-	printf("%u, %u, ", a, b);
 	for (count = 3; count <= 98; count++)
-	{
-		sum = a + b;
-		printf("%u", sum);
+	{ 
+		unsigned long c = a + b;
+		printf("%lu", c);
 		if (count < 98)
-		{
 			printf(", ");
-		}
 		a = b;
-		b = sum;
+		b = c;
 	}
+
 	printf("\n");
 
 	return (0);
