@@ -2,10 +2,8 @@
 
 /**
  * main - Entry point
- *
- * Description: This program prints all possible different combinations of three digits,
- * omitting combinations of the same digits and printing them in ascending order.
- *
+ * Description: This program prints all possible different combinations
+ * omitting combinations of the same digits and printing
  * Return: Always 0 (Success)
  */
 int main(void)
